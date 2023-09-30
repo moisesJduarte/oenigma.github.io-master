@@ -1,0 +1,68 @@
+{
+	"landing-page": {
+		"be-part-us": {
+			"button-title": "Convidar um amigo",
+			"form": {
+				"invalid-email": "",
+				"member": "",
+				"placeholder": {
+					"email": "",
+					"member": "",
+					"memberNum": "",
+					"name": ""
+				},
+				"required": ""
+			},
+			"title": "Seja parte do Enigma"
+		},
+		"footer": {
+			"copyright": "",
+			"title": "Tem alguma dùvida? Contacte-nos"
+		},
+		"header": {
+			"form": {
+				"placeholder": {
+					"birthday": "",
+					"code": "",
+					"id": "",
+					"name": "",
+					"whatsapp": ""
+				}
+			}
+		},
+		"hero": {
+			"banner": {
+				"main-subtitle": "exclusiva do Enigma",
+				"main-title": "Bem-vindo à comunidade"
+			},
+			"header": {
+				"button-text": "Comprar bihete",
+				"link-1": "Quem somos",
+				"link-2": "Eventos",
+				"link-3": "Contato"
+			}
+		},
+		"who-are-we": {
+			"imgTitle": "mulher azul",
+			"paragraph-1": "Somos uma empresa que organiza eventos para membros selecionados, que recebem dicas sobre os nossos próximos eventos. Garantimos a máxima segurança e privacidade.",
+			"paragraph-2": "O Enigma é para todos aqueles que querem desfrutar da vida, partilhar boa música e bebidas com os amigos, num lugar inesperado.",
+			"subtitle": "Enigma?",
+			"title": "O que é"
+		},
+		"why-us": {
+			"imgTitle": "green couple",
+			"paragraph-1": "Os nossos eventos são cuidadosamente pensados para oferecer aos nossos convidados uma noite inesquecível e cheia de surpresas. Investimos numa produção requintada como ninguém em Portugal faz.",
+			"paragraph-2": "A nossa equipa trabalha incansavelmente para fazer com que cada experiência seja diferente.",
+			"subtitle": "diferente?",
+			"title": "O que o torna"
+		}
+	},
+	"ui": {
+		"modal": {
+			"button": "Enviar",
+			"invite-a-friend": "",
+			"invite-a-friend-mobil": "",
+			"success": ""
+		}
+	}
+}
