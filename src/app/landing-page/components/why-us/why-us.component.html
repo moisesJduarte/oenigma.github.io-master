@@ -1,0 +1,38 @@
+<section id="why-us" style="background-image: url('assets/images/waves.png')">
+  <div
+    class="pt-10 grid lg:grid-cols-2 justify-items-center place-items-center"
+  >
+    <img
+      class="w-full h-full"
+      src="assets/images/pareja_verde.png"
+      [alt]="'landing-page.why-us.imgTitle' | translate"
+    />
+    <div class="h-5/6 px-4 flex flex-col justify-center items-center">
+      <div class="py-12">
+        <h1
+          class="stroke-primary-text text-center lg:text-right font-gotham-bold md:mr-4"
+        >
+          {{ "landing-page.why-us.title" | translate }}
+        </h1>
+        <h1
+          class="stroke-secondary-text text-center lg:text-right font-gotham-bold"
+        >
+          {{ "landing-page.why-us.subtitle" | translate }}
+        </h1>
+      </div>
+      <article>
+        <p
+          class="leading-10 w-11/12 text-white text-center lg:text-right text-xl md:text-2xl font-gotham-light font-extralight"
+        >
+          {{ "landing-page.why-us.paragraph-1" | translate }}
+        </p>
+        <br />
+        <p
+          class="leading-10 w-11/12 text-white text-center lg:text-right text-xl md:text-2xl font-gotham-light font-extralight"
+        >
+          {{ "landing-page.why-us.paragraph-2" | translate }}
+        </p>
+      </article>
+    </div>
+  </div>
+</section>

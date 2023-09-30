@@ -1,0 +1,93 @@
+<form
+  [formGroup]="paypalForm"
+  class="flex flex-col justify-between w-52 sm:w-64 md:w-98 mx-auto h-full"
+  (ngSubmit)="onSubmit()"
+>
+  <div class="flex flex-col">
+    <input
+      class="pl-4 focus:outline-none focus:ring-gray-400 outline-none focus:border-transparent my-1 h-10 bg-modal-gray border text-gray-400 border-gray-400 rounded-xl"
+      type="text"
+      [placeholder]="'landing-page.header.form.placeholder.name' | translate"
+      formControlName="name"
+    />
+    <span
+      class="text-red-400"
+      *ngIf="!getControl('name')?.valid && getControl('name')?.touched"
+    >
+      {{ "landing-page.be-part-us.form.required" | translate }}
+    </span>
+    <label class="text-gray-400 ml-2">{{
+      "landing-page.header.form.placeholder.birthday" | translate
+    }}</label>
+    <input
+      class="pl-4 w-full focus:outline-none focus:ring-gray-400 outline-none focus:border-transparent text-gray-400 my-1 h-10 bg-modal-gray border border-gray-400 rounded-xl"
+      type="date"
+      [placeholder]="
+        'landing-page.header.form.placeholder.birthday' | translate
+      "
+      formControlName="birthday"
+    />
+    <span
+      class="text-red-400"
+      *ngIf="!getControl('birthday')?.valid && getControl('birthday')?.touched"
+    >
+      {{ "landing-page.be-part-us.form.required" | translate }}
+    </span>
+    <input
+      class="pl-4 focus:outline-none focus:ring-gray-400 outline-none focus:border-transparent text-gray-400 my-1 h-10 bg-modal-gray border border-gray-400 rounded-xl"
+      type="text"
+      [placeholder]="'landing-page.header.form.placeholder.id' | translate"
+      formControlName="id"
+    />
+    <span
+      class="text-red-400"
+      *ngIf="!getControl('id')?.valid && getControl('id')?.touched"
+    >
+      {{ "landing-page.be-part-us.form.required" | translate }}
+    </span>
+    <input
+      class="pl-4 focus:outline-none focus:ring-gray-400 outline-none focus:border-transparent text-gray-400 my-1 h-10 bg-modal-gray border border-gray-400 rounded-xl"
+      type="text"
+      [placeholder]="'landing-page.header.form.placeholder.code' | translate"
+      formControlName="assistantCode"
+    />
+    <span
+      class="text-red-400"
+      *ngIf="
+        !getControl('assistantCode')?.valid &&
+        getControl('assistantCode')?.touched
+      "
+      >{{ "landing-page.be-part-us.form.required" | translate }}</span
+    >
+    <input
+      class="pl-4 focus:outline-none text-gray-400 focus:ring-gray-400 outline-none focus:border-transparent my-1 h-10 bg-modal-gray border border-gray-400 rounded-xl"
+      type="text"
+      [placeholder]="
+        'landing-page.header.form.placeholder.whatsapp' | translate
+      "
+      formControlName="whatsapp"
+    />
+    <span
+      class="text-red-400"
+      *ngIf="!getControl('whatsapp')?.valid && getControl('whatsapp')?.touched"
+      >{{ "landing-page.be-part-us.form.required" | translate }}</span
+    >
+    <div *ngFor="let item of genders">
+      <label class="text-gray-400">
+        <input
+          class="focus:outline-none focus:ring-gray-400 focus:ring-0 focus:ring-offset-0 outline-none focus:border-transparent text-gray-400 my-1 bg-modal-gray"
+          type="radio"
+          formControlName="gender"
+          [value]="item"
+        />
+        {{ item }}
+      </label>
+    </div>
+  </div>
+  <app-button-primary
+    class="mx-auto mt-5"
+    [buttonType]="'submit'"
+    [width]="'w-52 md:w-72 h-10'"
+    >{{ "ui.modal.button" | translate }}</app-button-primary
+  >
+</form>

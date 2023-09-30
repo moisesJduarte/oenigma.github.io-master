@@ -1,0 +1,24 @@
+input.ng-invalid.ng-touched {
+  @apply border border-red-600 focus:ring-0;
+}
+input[type="date"] {
+  @apply text-gray-400;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  position: relative;
+  left: 20px;
+}
+
+input[type="date"]:after {
+  color: transparent;
+  background: none;
+  display: block;
+  font-family: "FontAwesome";
+  content: "\f073";
+  width: 15px;
+  height: 20px;
+  color: #999;
+}

@@ -1,0 +1,16 @@
+<section
+  id="be-part-us"
+  class="pb-24 bg-cover bg-center h-screen flex flex-col items-center pt-32 md:pt-0 justify-start md:justify-center"
+  style="background-image: url('assets/images/DJ.png')"
+>
+  <h1
+    class="font-gotham-bold text-white text-5xl md:text-6xl lg:text-7xl text-center"
+  >
+    {{ "landing-page.be-part-us.title" | translate }}
+  </h1>
+  <div class="pt-4">
+    <app-button-primary [onClick]="onClickHandler">{{
+      "landing-page.be-part-us.button-title" | translate
+    }}</app-button-primary>
+  </div>
+</section>

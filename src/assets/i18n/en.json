@@ -1,0 +1,68 @@
+{
+	"landing-page": {
+		"be-part-us": {
+			"button-title": "invite a friend",
+			"form": {
+				"invalid-email": "",
+				"member": "",
+				"placeholder": {
+					"email": "",
+					"member": "",
+					"memberNum": "",
+					"name": ""
+				},
+				"required": ""
+			},
+			"title": "Be part of the Enigma"
+		},
+		"footer": {
+			"copyright": "Copyright © {{ value }}. All rights reserved. Developed by",
+			"title": "Do you have any doubt? contact us"
+		},
+		"header": {
+			"form": {
+				"placeholder": {
+					"birthday": "",
+					"code": "",
+					"id": "",
+					"name": "",
+					"whatsapp": ""
+				}
+			}
+		},
+		"hero": {
+			"banner": {
+				"main-subtitle": "Enigma exclusive",
+				"main-title": "welcome to the community"
+			},
+			"header": {
+				"button-text": "buy ticket",
+				"link-1": "Who we are",
+				"link-2": "Events",
+				"link-3": "Contact"
+			}
+		},
+		"who-are-we": {
+			"imgTitle": "blue woman",
+			"paragraph-1": "We are a company that organizes events for selected members, who receive tips about our upcoming events. We guarantee maximum security and privacy.",
+			"paragraph-2": "Enigma is for everyone who wants to enjoy life, share good music and drinks with friends, in an unexpected place.",
+			"subtitle": "Enigma?",
+			"title": "What is"
+		},
+		"why-us": {
+			"imgTitle": "green couple",
+			"paragraph-1": "Our events are carefully designed to offer our guests an unforgettable night full of surprises. We invest in an exquisite production like no one in Portugal does.",
+			"paragraph-2": "Our team works tirelessly to make every experience different.",
+			"subtitle": "different?",
+			"title": "what makes it"
+		}
+	},
+	"ui": {
+		"modal": {
+			"button": "Send",
+			"invite-a-friend": "",
+			"invite-a-friend-mobil": "",
+			"success": ""
+		}
+	}
+}

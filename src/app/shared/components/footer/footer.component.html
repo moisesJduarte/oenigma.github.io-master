@@ -1,0 +1,33 @@
+<section class="pt-4">
+  <div
+    class="container mx-auto text-white text-xl md:text-7xl font-gotham-bold text-center w-full"
+  >
+    {{ "landing-page.footer.title" | translate }}
+  </div>
+  <footer
+    class="flex flex-col-reverse md:flex-row justify-between items-center md:items-start container max-w-7xl mx-auto py-6"
+  >
+    <section *ngIf="withLogo">
+      <img class="w-64" src="assets/images/Logo_Enigma.svg" alt="Logo Enigma" />
+    </section>
+    <section class="flex flex-col justify-center h-20 w-80 md:w-118">
+      <ul class="flex justify-between items-center">
+        <li *ngFor="let item of socialMediaLinks">
+          <a href="{{ item.socialLink }}" target="_blank">
+            <img [src]="item.imgUrl" [alt]="item.nameLink | translate" />
+          </a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+  <div class="flex flex-col-reverse md:flex-row justify-center items-center">
+    <p class="text-gray-300 text-center font-gotham-light pb-4">
+      {{ "landing-page.footer.copyright" | translate: { year: currentYear } }}
+    </p>
+    <img
+      class="w-40"
+      src="assets/images/logo_blanco.svg"
+      alt="Duartech Solutions LLC"
+    />
+  </div>
+</section>

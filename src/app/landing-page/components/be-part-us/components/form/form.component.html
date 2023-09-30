@@ -1,0 +1,78 @@
+<form
+  [formGroup]="inviteAFriendForm"
+  (ngSubmit)="onSubmit()"
+  class="flex flex-col justify-between w-52 sm:w-64 md:w-98 mx-auto h-full"
+>
+  <div class="flex flex-col">
+    <input
+      class="pl-4 focus:outline-none focus:ring-gray-400 outline-none focus:border-transparent my-1 h-10 bg-modal-gray border text-white border-gray-400 rounded-xl"
+      type="text"
+      [placeholder]="
+        'landing-page.be-part-us.form.placeholder.name' | translate
+      "
+      formControlName="name"
+    />
+    <mat-error
+      *ngIf="
+        onGetFormController('name')?.touched &&
+        onGetFormController('name')?.hasError('required')
+      "
+    >
+      {{ "landing-page.be-part-us.form.required" | translate }}
+    </mat-error>
+    <input
+      class="pl-4 focus:outline-none focus:ring-gray-400 outline-none focus:border-transparent text-white my-1 h-10 bg-modal-gray border border-gray-400 rounded-xl"
+      type="text"
+      [placeholder]="
+        'landing-page.be-part-us.form.placeholder.email' | translate
+      "
+      placeholder="O email"
+      formControlName="email"
+    />
+    <mat-error
+      *ngIf="
+        onGetFormController('email')?.touched &&
+        onGetFormController('email')?.hasError('required')
+      "
+    >
+      {{ "landing-page.be-part-us.form.required" | translate }}
+    </mat-error>
+    <mat-error
+      *ngIf="
+        onGetFormController('email')?.hasError('email') &&
+        !onGetFormController('email')?.hasError('required')
+      "
+    >
+      {{ "landing-page.be-part-us.form.invalid-email" | translate }}
+    </mat-error>
+    <input
+      *ngIf="isVisibleField"
+      class="pl-4 focus:outline-none focus:ring-gray-400 outline-none focus:border-transparent text-white my-1 h-10 bg-modal-gray border border-gray-400 rounded-xl"
+      type="text"
+      [placeholder]="
+        'landing-page.be-part-us.form.placeholder.memberNum' | translate
+      "
+      formControlName="memberNum"
+    />
+    <div class="my-2">
+      <input
+        class="pl-4 h-6 w-6 focus:outline-none focus:ring-transparent focus:ring-offset-transparent focus:ring-offset-0 focus:border-gray-500 text-primary-gray border-2 border-gray-500 rounded"
+        type="checkbox"
+        name="Eu sou afiliado"
+        [placeholder]="
+          'landing-page.be-part-us.form.placeholder.member' | translate
+        "
+        (click)="onChangeCheckbox()"
+      />
+      <label class="text-gray-400 ml-2">
+        {{ "landing-page.be-part-us.form.member" | translate }}
+      </label>
+    </div>
+  </div>
+  <app-button-primary
+    class="mx-auto mt-5"
+    [buttonType]="'submit'"
+    [width]="'w-52 sm:w-60 md:w-72 h-10'"
+    >{{ "ui.modal.button" | translate }}</app-button-primary
+  >
+</form>

@@ -1,0 +1,68 @@
+{
+	"landing-page": {
+		"be-part-us": {
+			"button-title": "Sim, gostaria",
+			"form": {
+				"invalid-email": "Por favor digite um email válido",
+				"member": "Eu sou afiliado",
+				"placeholder": {
+					"email": "O email",
+					"member": "Eu sou afiliado",
+					"memberNum": "Numero de afiliado",
+					"name": "Nome"
+				},
+				"required": "Este campo é obrigatório"
+			},
+			"title": "Quer fazer parte do Enigma ou convidar um amigo?"
+		},
+		"footer": {
+			"copyright": "Copyright © {{year}}. Todos os direitos reservados. Desenvolvido por",
+			"title": "Tem alguma dùvida? Contacte-nos"
+		},
+		"header": {
+			"form": {
+				"placeholder": {
+					"birthday": "Data de Nascimento",
+					"code": "Bilhete de Identidade",
+					"id": "Bilhete de Identidade",
+					"name": "Nome",
+					"whatsapp": "Contato ou WhatsApp"
+				}
+			}
+		},
+		"hero": {
+			"banner": {
+				"main-subtitle": "exclusiva do Enigma",
+				"main-title": "Bem-vindo à comunidade"
+			},
+			"header": {
+				"button-text": "Comprar bilhete",
+				"link-1": "Quem somos",
+				"link-2": "Eventos",
+				"link-3": "Contate-nos"
+			}
+		},
+		"who-are-we": {
+			"imgTitle": "mulher azul",
+			"paragraph-1": "Somos uma empresa que organiza eventos para membros selecionados, que recebem pistas de nossas próximas festas temáticas.",
+			"paragraph-2": "O Enigma é para todos aqueles que querem desfrutar da vida, partilhar boa música e bebidas com os amigos, num lugar inesperado. Garantimos privacidade e segurança.",
+			"subtitle": "Enigma?",
+			"title": "O que é"
+		},
+		"why-us": {
+			"imgTitle": "green couple",
+			"paragraph-1": "Os nossos eventos são originais, marcantes e diferentes de tudo o que já visto antes. Ouvimos as ideias dos nossos convidados e analisamos as melhores opções e motivos. A criatividade é o nosso principal valor para transformar as noites em experiências exclusivas e únicas.",
+			"paragraph-2": "Personalizamos cada festa, dando-lhe um toque diferenciador. Nunca fazemos duas produções iguais, e adoramos pôr a nossa ingenuidade trabalhar para surpreender. Concentramo-nos em proporcionar a melhor experiência   para   que   todos   os   participantes   se   lembrem   do   que aconteceu no evento, para que fique na memória das pessoas para sempre.",
+			"subtitle": "diferente?",
+			"title": "O que o torna"
+		}
+	},
+	"ui": {
+		"modal": {
+			"button": "Mandar",
+			"invite-a-friend": "Copie o link para convidar um amigo",
+			"invite-a-friend-mobil": "Convidar um amigo",
+			"success": "Dentro de alguns minutos sera contacttado pelta nossa equipa de vendas"
+		}
+	}
+}

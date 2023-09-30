@@ -1,0 +1,19 @@
+.stroke-primary-text {
+  -webkit-text-fill-color: rgb(
+    0,
+    0,
+    0
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke: 3px white;
+  @apply text-5xl sm:text-6xl md:text-7xl;
+}
+
+.stroke-secondary-text {
+  -webkit-text-fill-color: rgb(
+    0,
+    0,
+    0
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke: 3px #2ef8a0;
+  @apply text-5xl sm:text-6xl md:text-7xl;
+}

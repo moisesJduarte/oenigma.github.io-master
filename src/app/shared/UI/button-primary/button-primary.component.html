@@ -1,0 +1,10 @@
+<button
+  [ngClass]="width"
+  class="text-white text-lg font-bold px-4 md:px-12 py-2 rounded-xl hover:bg-blue-600 active:bg-blue-800 bg-secondary-button"
+  (click)="onClick()"
+  [type]="buttonType"
+>
+  <strong>
+    <ng-content></ng-content>
+  </strong>
+</button>

@@ -1,0 +1,23 @@
+<app-modals>
+  <div
+    class="container max-w-3xl px-auto mx-auto h-28 justify-between flex flex-col items-center"
+  >
+    <article class="text-white text-center">
+      {{ "ui.modal.success" | translate }}
+    </article>
+    <a href="#be-part-us">
+      <app-button-primary
+        [width]="'w-52 md:w-72 h-10'"
+        mat-dialog-close
+        [onClick]="onCopiedLink"
+      >
+        <p class="hidden md:block">
+          {{ "ui.modal.invite-a-friend" | translate }}
+        </p>
+        <p class="md:hidden">
+          {{ "ui.modal.invite-a-friend-mobil" | translate }}
+        </p>
+      </app-button-primary>
+    </a>
+  </div>
+</app-modals>

@@ -1,0 +1,170 @@
+<header class="mx-auto">
+  <div class="flex flex-col shadow-top flex-1 md:hidden">
+    <div
+      [ngClass]="isOpen ? 'z-0' : 'z-10'"
+      [class]="
+        isScrolling ? 'header-mobil bg-black' : 'header-mobil bg-transparent'
+      "
+    >
+      <button
+        (click)="onToggle()"
+        type="button"
+        class="w-20 px-4 text-white text-lg focus:outline-none focus:ring-inset focus:ring-0 md:hidden"
+      >
+        <img
+          class="h-full w-full"
+          src="assets/images/menu_mobil.svg"
+          alt="logo"
+        />
+      </button>
+      <a class="w-48" href="#hero">
+        <img
+          class="h-full w-full"
+          src="assets/images/Logo_Enigma.svg"
+          alt="Logo Enigma"
+        />
+      </a>
+      <button
+        (click)="onPayPalClick()"
+        type="button"
+        class="w-20 px-4 text-white text-lg focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
+      >
+        <img
+          class="h-full w-full"
+          src="assets/images/Compra_bilhete.svg"
+          alt="logo"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    [ngClass]="
+      isOpen
+        ? 'z-10 translate-x-0 opacity-100'
+        : 'negative-z-index opacity-0 -translate-x-full'
+    "
+    class="fixed transition ease-in-out duration-300 transform inset-0 flex md:hidden"
+    role="dialog"
+    aria-modal="true"
+  >
+    <div
+      (click)="onToggle()"
+      [ngClass]="isOpen ? 'opacity-100 block' : 'opacity-0 hidden'"
+      class="transition-all ease-linear duration-300 fixed inset-0 bg-gray-600 bg-opacity-75"
+      aria-hidden="true"
+    ></div>
+    <div
+      [ngClass]="isOpen ? 'translate-x-0' : '-translate-x-full'"
+      class="transition ease-in-out duration-300 transform relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-gray-800"
+    >
+      <div *ngIf="isOpen" class="absolute top-0 right-0 -mr-12 pt-2">
+        <button
+          (click)="onToggle()"
+          type="button"
+          class="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+        >
+          <span class="sr-only">Close sidebar</span>
+          <svg
+            class="h-6 w-6 text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div (click)="onToggle()" class="flex-shrink-0 flex items-center px-4">
+        <img
+          class="mobil-icons"
+          src="assets/images/menu_mobil.svg"
+          alt="Workflow"
+        />
+      </div>
+      <div class="mt-5 flex-1 h-0 overflow-y-auto">
+        <nav aria-label="header" class="px-2 space-y-1">
+          <a (click)="onToggle()" href="#who-are-we" class="mobil-link">
+            <img
+              class="mobil-icons"
+              src="assets/images/enigma_mobil.svg"
+              alt="Workflow"
+            />
+
+            {{ "landing-page.hero.header.link-1" | translate }}
+          </a>
+
+          <a (click)="onToggle()" href="#why-us" class="mobil-link">
+            <img
+              class="mobil-icons"
+              src="assets/images/Eventos.svg"
+              alt="Workflow"
+            />
+            {{ "landing-page.hero.header.link-2" | translate }}
+          </a>
+
+          <a (click)="onToggle()" href="#be-part-us" class="mobil-link">
+            <img
+              class="mobil-icons"
+              src="assets/images/Contacte-nos.svg"
+              alt="Workflow"
+            />
+            {{ "landing-page.hero.header.link-3" | translate }}
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="flex-shrink-0 w-14" aria-hidden="true"></div>
+  </div>
+  <nav
+    [ngClass]="isScrolling ? 'bg-black' : 'bg-transparent'"
+    class="hidden md:block max-w-full ease-in-out delay-150 duration-300 transition mx-auto px-4 sm:px-6 lg:px-8 shadow-top"
+    aria-label="Top"
+  >
+    <div class="py-6 flex items-center justify-between lg:border-none">
+      <a class="md:w-52 lg:w-60" href="#hero">
+        <img
+          class="h-full w-full"
+          src="assets/images/Logo_Enigma.svg"
+          alt="Logo Enigma"
+        />
+      </a>
+      <div class="flex justify-between items-center md:w-95 lg:w-118">
+        <a
+          href="#who-are-we"
+          class="text-xl font-bold text-white hover:text-indigo-50"
+        >
+          {{ "landing-page.hero.header.link-1" | translate }}
+        </a>
+
+        <a
+          href="#why-us"
+          class="text-xl font-bold text-white hover:text-indigo-50"
+        >
+          {{ "landing-page.hero.header.link-2" | translate }}
+        </a>
+
+        <a
+          href="#be-part-us"
+          class="text-xl font-bold text-white hover:text-indigo-50"
+        >
+          {{ "landing-page.hero.header.link-3" | translate }}
+        </a>
+        <app-button
+          [onClick]="onPayPalClick"
+          [backgroundImg]="'assets/images/button.png'"
+        >
+          {{ "landing-page.hero.header.button-text" | translate }}
+        </app-button>
+      </div>
+    </div>
+  </nav>
+</header>

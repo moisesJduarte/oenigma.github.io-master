@@ -1,0 +1,41 @@
+<section
+  id="who-are-we"
+  style="background-image: url('assets/images/waves.png')"
+>
+  <div
+    class="grid lg:grid-cols-2 justify-items-center place-items-center max-w-7xl mx-auto py-5"
+  >
+    <div
+      class="row-start-2 lg:row-start-1 h-5/6 px-4 flex flex-col justify-center items-center"
+    >
+      <div class="py-12">
+        <h1 class="stroke-primary-text font-gotham-bold md:inline mr-4">
+          {{ "landing-page.who-are-we.title" | translate }}
+        </h1>
+        <h1 class="stroke-secondary-text font-gotham-bold md:inline">
+          {{ "landing-page.who-are-we.subtitle" | translate }}
+        </h1>
+      </div>
+      <article>
+        <p
+          class="leading-10 w-11/12 text-gray-100 text-xl md:text-2xl text-center lg:text-left font-gotham-light font-extralight"
+        >
+          {{ "landing-page.who-are-we.paragraph-1" | translate }}
+        </p>
+        <br />
+        <p
+          class="leading-10 w-11/12 text-gray-100 text-xl md:text-2xl text-center lg:text-left font-gotham-light font-extralight"
+        >
+          {{ "landing-page.who-are-we.paragraph-2" | translate }}
+        </p>
+      </article>
+    </div>
+    <div class="row-start-1 lg:col-start-2 lg:w-98 xl:w-128 h-full">
+      <img
+        class="w-full h-full"
+        src="assets/images/blue-woman.png"
+        [alt]="'landing-page.who-are-we.imgTitle' | translate"
+      />
+    </div>
+  </div>
+</section>

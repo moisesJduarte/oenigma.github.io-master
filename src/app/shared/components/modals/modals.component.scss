@@ -1,0 +1,23 @@
+.mat-dialog-container {
+  padding: 0;
+  background-color: #1a1a1af7;
+  border-radius: 10px;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+  // padding-left: 15px;
+  color: rgba(255, 255, 255, 0.562);
+}
+
+input[type="checkbox"],
+input [type="checkbox"]:checked {
+  background-color: #1e1a1b;
+  @apply border-gray-500;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:checked:focus,
+[type="checkbox"]:checked:hover {
+  @apply border border-gray-500;
+}
